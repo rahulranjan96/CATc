@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+<style type="text/css">
+.btnExample 
+{
+  color: #900;
+  background: #FF0;
+  font-weight: bold;
+  border: 1px solid #900;
+}
+ .btnExample:hover {
+  color: #FFF;
+  background: #900;
+}
+.btnExample:hover {
+  cursor: pointer;
+}
+.buttone{
+  color: #900;
+  background: #FF0;
+  font-weight: bold;
+  border: 1px solid #900;
+}
+ .buttone:hover{
+  color: blue;
+  background: #900;
+}
+.buttone:hover {
+  cursor: pointer; 
+}
+body{
+	background-color: lightblue;
+}
+input[type="text"] {
+  display: block;
+  margin: 0;
+  width: 30%;
+  font-family: sans-serif;
+  font-size: 18px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+}
+input[type="text"] {
+  padding: 10px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+#random {
+	position: relative;
+	left:30%;
+}
+</style>
+<script src="popup.js"></script>
+</head>
+<body>
+<form action="http://localhost/word_storage/insert1.php" method="POST">
+<br>
+<input id="text" type="text" name="Text" placeholder="Text to Annotate"><br>
+<input type="radio" name="labels" id = "labels" value="male"> Male <br>
+<input type="radio" name="labels" id = "labels" value="female"> Female <br>
+<input type="radio" name="labels" id = "labels" value="contry"> Contry <br>
+<input type="radio" name="labels" id = "labels" value="state"> State <br><br>
+Others...<br>
+<input id="labels" type="text" name="labelnew" placeholder="New Category" value=""><br>
+<input class = "btnExample" type="submit" value="Submit" name = "submit">
+<br>
+</form>
+</body>
+</html>
+
